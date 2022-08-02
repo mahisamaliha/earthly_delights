@@ -92,3 +92,43 @@
     margin: 20px;
     padding: 5px;
 }
+
+.foryou{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    background-color: green;
+    margin-top: 150px;
+    margin-left: 600px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    padding-top: 35px;
+    grid-gap: 50px;
+
+}
+
+.rare{
+    border-style: ridge;
+    padding-top: 2%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.interested{
+    border-style: outset;
+    display: grid;
+    grid-template-columns:2fr 6fr 2fr 1fr 1fr;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

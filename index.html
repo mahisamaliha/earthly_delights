@@ -10,14 +10,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    
 </head>
 
 <body>
+    <!--NAVBAR--->
     <nav style="background-color: rgba(0, 0, 0, 0.7); padding: 25px;" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -31,21 +32,23 @@
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <!-- <li><a><img class="ed" src="images/ed.jpg"></a></li> -->
-                <li><a href="home">Home</a></li>
-                <li><a href="tree">Tree Details</a></li>
-                <li><a href="market">Market Place</a></li>
-                <li><a href="auction">Auction</a></li>
-                <li><a href="about">About Us</a></li>
+                <li><a style="color: white;" href="home">Home</a></li>
+                <li><a style="color: white;" href="tree">Tree Details</a></li>
+                <li><a style="color: white;" href="market">Market Place</a></li>
+                <li><a style="color: white;" href="auction">Auction</a></li>
+                <li><a style="color: white;" href="about">About Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><i class="fa fa-shopping-cart" style="font-size:20px;padding-top: 14px; padding-right: 11px; color: white;">Cart</i></li>
+                <li><a style="color: white;" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a style="color: white;" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
             </div>
         </div>
     </nav>
   
-    <div id="home" class="bg-image" style="background-image: url(images/bg.jpg)">
+    <!---FIRST CONTAINER-->
+    <div id="home" class="bg-image" style="background-image: url(bg.jpg)">
         <div style="background-color: rgba(0, 0, 0, 0.4)">
             <div style="height: 580px;">
                 <div class="wel">
@@ -58,12 +61,12 @@
                 
                 <div class="row ">
                     <div class="column">
-                        <img class="image" src="images/bonsai.jpg">
+                        <img class="image" src="bonsai.jpg">
                         <h1 style="padding-left: 326px;">Bonsai</h1>
                         <p style="padding-left: 326px; width: 680px;">bonsai, (Japanese: “tray-planted”) living dwarf tree or trees or the art of training and growing them in containers. Bonsai specimens are ordinary trees and shrubs (not hereditary dwarfs) that are dwarfed by a system of pruning roots and branches and training branches by tying with wire.</p>
                     </div>
                     <div class="column">
-                        <img class="image" src="images/ganzia.jpg">
+                        <img class="image" src="ganzia.jpg">
                         <h1 style="padding-left: 326px;">Flower</h1>
                         <p style="padding-left: 326px; width: 680px;">each flower consists of a floral axis upon which are borne the essential organs of reproduction (stamens and pistils) and usually accessory organs (sepals and petals); the latter may serve to both attract pollinating insects and protect the essential organs.</p>
                     </div> 
@@ -72,6 +75,7 @@
         </div>
     </div>
     
+    <!---DEAL CONTAINER-->
     <div id="tree">
         <div style="padding-top:470px ;">
             <div class="container">
@@ -83,7 +87,7 @@
                         <div class="mySlides fade">
                             <div class="deal">
                                 <div>
-                                    <img src="images/lily.jpg" style="width: 400px; height: 400px;">
+                                    <img src="lily.jpg" style="width: 400px; height: 400px;">
                                 </div>
                                 <div class="text">
                                     <div>
@@ -104,7 +108,7 @@
                         <div class="mySlides fade">
                             <div class="deal">
                                 <div>
-                                    <img src="images/rose.jpg" style="width: 400px; height: 400px;">
+                                    <img src="rose.jpg" style="width: 400px; height: 400px;">
                                 </div>
                                 <div class="text">
                                     <div>
@@ -148,79 +152,80 @@
         </div>
     </div>
 
+    <!---LATEST PRODUCT CONTAINER-->
     <div class="latestpro">
-        <h1 style="padding-left: 120px; padding-top: 60px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Latest Product</h1>
+        <h1 style="display: block; background-color: rgb(175, 227, 137, 0.8); text-align: center;margin-left: 120px;margin-right: 120px; margin-top: 200px; padding-bottom: 40px;padding-top: 40px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Latest Trees</h1>
         <hr>
         <div class="product">
             <div class="container1">
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="images/rose.jpg" style="width: 160px; height: 160px;">
+                    <img src="rose.jpg" style="width: 160px; height: 160px;">
                     <h3>rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
@@ -230,10 +235,105 @@
         </div>
     </div>
 
-    <div class="foru">
-        <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">For You</h1>
+    <!---FOR YOU CONTAINER--->
+    <div >
+        <h1 class="foryou">For You</h1>
+        <div class="container2">
+            <!---Rare Container-->
+            <div>
+                <h3 style="padding-left: 20%;">Rare one :</h3>
+                <div class="rare" style="background-color: rgb(212, 249, 212);">
+                    <img src="lily.jpg" style="width: 400px; height: 400px;">
+                    <h2 style="font-family:cursive;">Lily</h2>
+                    <h3 style="font-family: cursive;">Till Now Highest Bid Is -> $6</h3>
+                    <button  style="width: 100px; height:40px; margin-bottom: 2%; background-color: rgb(42, 171, 49); color: white;">View Item</button>
+                </div>
+            </div>
+            <!----For U Container--->
+            <div>
+                <h3>You can be interested</h3>
+                <hr>
+                <div class="interested">
+                    <div>
+                        <img src="lily.jpg" style="width: 100px; height: 100px;">
+                    </div>
+                    <div>
+                        <h3>name</h3>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <button  style="width: 70px; height:25px; padding-bottom:5px; margin-bottom: 2%; background-color: rgb(42, 171, 49); color: white;">View</button>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <i class="fa fa-heart-o"  style="font-size:24px"></i>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+                    </div>
+                </div>
+                <div class="interested">
+                    <div>
+                        <img src="lily.jpg" style="width: 100px; height: 100px;">
+                    </div>
+                    <div>
+                        <h3>name</h3>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <button  style="width: 70px; height:25px; padding-bottom:5px; margin-bottom: 2%; background-color: rgb(42, 171, 49); color: white;">View</button>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <i class="fa fa-heart-o"  style="font-size:24px"></i>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+                    </div>
+                </div>
+                <div class="interested">
+                    <div>
+                        <img src="lily.jpg" style="width: 100px; height: 100px;">
+                    </div>
+                    <div>
+                        <h3>name</h3>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <button  style="width: 70px; height:25px; padding-bottom:5px; margin-bottom: 2%; background-color: rgb(42, 171, 49); color: white;">View</button>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <i class="fa fa-heart-o"  style="font-size:24px"></i>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+                    </div>
+                </div>
+                <div class="interested">
+                    <div>
+                        <img src="lily.jpg" style="width: 100px; height: 100px;">
+                    </div>
+                    <div>
+                        <h3>name</h3>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <button  style="width: 70px; height:25px; padding-bottom:5px; margin-bottom: 2%; background-color: rgb(42, 171, 49); color: white;">View</button>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <i class="fa fa-heart-o"  style="font-size:24px"></i>
+                    </div>
+                    <div style="padding-top: 25px;">
+                        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
         
     </div>
+
+    <!---FOOTER-->
+    <div class="footer">
+        <div>
+            
+        </div>
+    </div>
+
 
     <script>
         let slideIndex = 0;
