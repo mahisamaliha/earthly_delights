@@ -1,0 +1,94 @@
+.bg-image{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:580px; 
+    position:relative; 
+    background-size: cover; 
+}
+
+.wel{
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    font-size: 60px;
+    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.para1{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.image{
+    width: 680px ;
+    height:350px; 
+    padding-left: 320px ;
+    padding-top:40px; 
+    margin: 5px; 
+}
+
+.row{
+    margin: 5px;
+}
+
+.container{
+    border-style: solid;
+    margin: 35px;
+}
+
+.deal{
+    display: grid;
+    grid-template-columns:2fr 2fr;
+    grid-row-gap: 100px;
+    padding-left: 120px;
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: green;
+    color: white;
+    border-radius: 40%;
+}
+
+/* Slider */
+
+.mySlides {display: none}
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.container1{
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr 2fr 2fr 2fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.pro{
+    border-style: ridge;
+    margin: 20px;
+    padding: 5px;
+}
