@@ -132,3 +132,19 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.footer{
+    display: block;
+    background-color: rgb(188, 233, 165);
+    padding-top: 20px;
+    padding-left: 350px;
+    padding-right: 270px;
+    padding-bottom: 25px;
+    max-width: 2000px;
+    margin-top: 70px;
+    color: black;
+
+    display: grid;
+    grid-template-columns:3fr 3fr 3fr 3fr;
+    
+}
