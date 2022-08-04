@@ -1,17 +1,26 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+    /* FIRST CONTAINER */
+
 .bg-image{
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height:580px; 
+    height:120%; 
     position:relative; 
     background-size: cover; 
+    background-image: url(maple.jpg); 
+    width: 100%;
 }
 
 .wel{
     text-align: center;
     color: white;
-    font-family: cursive;
-    font-size: 60px;
-    padding-top: 200px;
+    font-size: 70px;
+    padding-top: 230px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -20,69 +29,138 @@
     color: white;
     text-align: center;
     padding-top: 40px;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    /* font-family:'Times New Roman', Times, serif; */
 }
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
+/* <!-----CATEGORY CONTAINER-----> */
 
-.image{
-    width: 680px ;
-    height:350px; 
-    padding-left: 320px ;
-    padding-top:40px; 
-    margin: 5px; 
+.categ{
+    display: block;
+    background-color: rgb(237, 250, 203);
+    text-align: center;
+    margin-top: 140px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 20px;
 }
-
-.row{
-    margin: 5px;
-}
-
-.container{
-    border-style: solid;
-    margin: 35px;
-}
-
-.deal{
+.smallcategory{
     display: grid;
-    grid-template-columns:2fr 2fr;
-    grid-row-gap: 100px;
-    padding-left: 120px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    margin-top: 80px;
+    margin-left: 220px;
+    margin-right: 200px;
 }
 
-.btn{
-    width: 150px;
-    height: 50px;
-    font-size: 40px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: green;
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    text-align: center;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
     color: white;
-    border-radius: 40%;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
 }
 
-/* Slider */
+.categoryimage{
+    width: 250px; 
+    height: 200px;
+    border-radius: 7px;
+    padding: 4px 2px;
+}
 
-.mySlides {display: none}
+    /* Slideshow container */
+
+.slideshow-container {
+    width: 600px;
+    position: relative;
+    margin-left: 470px;
+    margin-right: 200px;
+    margin-top: 140px;
+  }
+  
+  
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
   
   /* Fading animation */
   .fade {
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 300s;
   }
   
   @keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .9}
     to {opacity: 1}
   }
 
+  /* Latest Product */
+
 .container1{
     display: grid;
-    grid-template-columns:2fr 2fr 2fr 2fr 2fr 2fr;
-    padding-left: 50px;
-    padding-right: 50px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    padding-left: 250px;
+    padding-right: 250px;
     text-align: center;
     padding-top: 15px;
 }
@@ -91,10 +169,12 @@
     border-style: ridge;
     margin: 20px;
     padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
 }
 
 .foryou{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     display: inline-block;
     background-color: green;
     margin-top: 150px;
@@ -105,6 +185,27 @@
     padding-bottom: 10px;
     color: white;
 }
+
+.trending{
+    display: block; 
+    background-color: rgb(175, 227, 137, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-left: 320px;
+    margin-right: 320px; 
+    border-radius:8px ;
+    margin-top: 200px; 
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.latestimages{
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+/* for you */
 
 .container2{
     display: grid;
@@ -132,6 +233,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/* Footer */
 
 .footer{
     display: block;

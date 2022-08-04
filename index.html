@@ -19,7 +19,7 @@
 
 <body>
     <!--NAVBAR--->
-    <nav style="background-color: rgba(0, 0, 0, 0.7); padding: 25px;" class="navbar navbar-inverse navbar-fixed-top">
+    <nav style="background-color: rgba(0, 0, 0, 0.7); padding: 16px;" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -39,8 +39,9 @@
                 <li><a style="color: white;" href="about">About Us</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><i class="fa fa-shopping-cart" style="font-size:20px;padding-top: 14px; padding-right: 11px; color: white;">Cart</i></li>
-                <li><a style="color: white;" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a style="color: white;" href="#"><span class="glyphicon glyphicon-heart" style="padding-right:4px ;"></span>Wishlist</a></li>
+                <li><a style="color: white;" href="#"><span class="glyphicon glyphicon-shopping-cart" style="padding-right:2px ;"></span>Cart</a></li>
+                <li><a style="color: white;" href="#"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
                 <li><a style="color: white;" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
             </div>
@@ -48,35 +49,60 @@
     </nav>
   
     <!---FIRST CONTAINER-->
-    <div id="home" class="bg-image" style="background-image: url(bg.jpg)">
-        <div style="background-color: rgba(0, 0, 0, 0.4)">
-            <div style="height: 580px;">
+    <div id="home" class="bg-image">
+        <div style="background-color: rgba(0, 0, 0, 0.3)">
+            <div style="height: 600px;">
                 <div class="wel">
                     <p>Welcome To Earthly Delight</p>
                 </div>
                 
-                <p class="para1">An incredible place where u can find the details of your desire trees
-                                        Can buy trees and also can bid trees.
+                <p class="para1">An incredible place where u can find the details of your 
+                                 desire trees .Can buy trees and also can bid trees.
                 </p>
-                
-                <div class="row ">
-                    <div class="column">
-                        <img class="image" src="bonsai.jpg">
-                        <h1 style="padding-left: 326px;">Bonsai</h1>
-                        <p style="padding-left: 326px; width: 680px;">bonsai, (Japanese: “tray-planted”) living dwarf tree or trees or the art of training and growing them in containers. Bonsai specimens are ordinary trees and shrubs (not hereditary dwarfs) that are dwarfed by a system of pruning roots and branches and training branches by tying with wire.</p>
-                    </div>
-                    <div class="column">
-                        <img class="image" src="ganzia.jpg">
-                        <h1 style="padding-left: 326px;">Flower</h1>
-                        <p style="padding-left: 326px; width: 680px;">each flower consists of a floral axis upon which are borne the essential organs of reproduction (stamens and pistils) and usually accessory organs (sepals and petals); the latter may serve to both attract pollinating insects and protect the essential organs.</p>
-                    </div> 
-                </div> 
             </div>
         </div>
     </div>
+
+    <!-----CATEGORY CONTAINER----->
+
+    <div>
+        <h2 class="trending">Our Categories</h2>
+    </div>
+    
+    <div class="smallcategory">
+        <div class="card" style="width:210px; height: 400px;">
+            <img class="categoryimage" src="bonsai.jpg" style="width:200px">
+            <h1>Bonsai</h1>
+            <p>Bonsai living dwarf tree or trees or the art of training and growing them in containers.</p>
+            <p><button>View trees</button></p>
+          </div>
+    
+          <div class="card" style="width:210px; height: 400px;">
+            <img class="categoryimage" src="fruittree.jpg" style="width:200px">
+            <h1>Fruit</h1>
+            <p>All trees that are flowering plants produce fruit,ripened ovaries of flowers containing seeds</p>
+            <p><button>View trees</button></p>
+          </div>
+    
+          <div class="card" style="width:210px; height: 400px;">
+            <img class="categoryimage" src="ganzia.jpg" style="width:200px">
+            <h1>Flower</h1>
+            <p>Flowering trees are among the most prized specimens of the yard, making a bold statement .</p>
+            <p><button>View trees</button></p>
+          </div>
+    
+          <div class="card" style="width:210px; height: 400px;">
+            <img class="categoryimage" src="evergreentree.jpg" style="width:200px">
+            <h1>Evergreen</h1>
+            <p>Evergreen, any plant that retains its leaves through the year and into the following growing season.</p>
+            <p><button>View trees</button></p>
+          </div>
+    </div>
     
     <!---DEAL CONTAINER-->
-    <div id="tree">
+    <h2 class="trending">Today's Deal</h2>
+
+    <!-- <div id="tree">
         <div style="padding-top:470px ;">
             <div class="container">
                 <h1 style="color:rgba(63, 174, 95, 0.8);padding-left: 130px;">Deal of the day</h1>
@@ -150,83 +176,116 @@
                 </div>
             </div>                
         </div>
-    </div>
+    </div> -->
 
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <img src="lily.jpg" style="width:600px; height: 600px;">
+        <div class="text">Caption Text</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="rose.jpg" style="width:600px; height: 600px;">
+        <div class="text">Caption Two</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <img src="sunflower.jpg" style="width:600px; height: 600px;">
+        <div class="text">Caption Three</div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <br>
+  
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
     <!---LATEST PRODUCT CONTAINER-->
     <div class="latestpro">
-        <h1 style="display: block; background-color: rgb(175, 227, 137, 0.8); text-align: center;margin-left: 120px;margin-right: 120px; margin-top: 200px; padding-bottom: 40px;padding-top: 40px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Latest Trees</h1>
+        <h1 class="trending">Trending Trees</h1></br></br>
         <hr>
         <div class="product">
             <div class="container1">
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="maple.jpg" style="width: 160px; height: 160px;">
+                    <h4>Maple</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="lily.jpg" style="width: 160px; height: 160px;">
+                    <h4>Lily</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="sunflower.jpg" style="width: 160px; height: 160px;">
+                    <h4>Sunflower</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="gmaple.jpg" style="width: 160px; height: 160px;">
+                    <h4>Green Maple</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="rose.jpg" style="width: 160px; height: 160px;">
+                    <h3>Rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="evergreentree.jpg" style="width: 160px; height: 160px;">
+                    <h4>EverGreen</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="bonsai.jpg" style="width: 160px; height: 160px;">
+                    <h4>Bonsai</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="fruittree.jpg" style="width: 160px; height: 160px;">
+                    <h4>Blue Berry</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="rose.jpg" style="width: 160px; height: 160px;">
+                    <h3>Rose</h3>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="gmaple.jpg" style="width: 160px; height: 160px;">
+                    <h4>Green Maple</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="maple.jpg" style="width: 160px; height: 160px;">
+                    <h4>Maple</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
                 <div class="pro">
-                    <img src="rose.jpg" style="width: 160px; height: 160px;">
-                    <h3>rose</h3>
+                    <img class="latestimages" src="fruittree.jpg" style="width: 160px; height: 160px;">
+                    <h4>Blue Berry</h4>
                     <h4>2$</h4>
                     <button class="probtn">Add to cart</button>
                 </div>
@@ -244,8 +303,8 @@
                 <h3 style="padding-left: 20%;">Rare one :</h3>
                 <div class="rare" style="background-color: rgb(212, 249, 212);">
                     <img src="lily.jpg" style="width: 400px; height: 400px;">
-                    <h2 style="font-family:cursive;">Lily</h2>
-                    <h3 style="font-family: cursive;">Till Now Highest Bid Is -> $6</h3>
+                    <h2>Lily</h2>
+                    <h3>Till Now Highest Bid Is -> $6</h3>
                     <button  style="width: 100px; height:40px; margin-bottom: 2%; background-color: rgb(42, 171, 49); color: white;">View Item</button>
                 </div>
             </div>
@@ -330,40 +389,54 @@
     <!---FOOTER-->
     <div class="footer">
         <div>
-            <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;"><i class="fa fa-address-book" style="font-size:24px"></i>
+            <h4><i class="fa fa-address-book" style="font-size:24px"></i>
                 About Us</h4>
         </div>
         <div>
-            <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">            <i class='fas fa-user-shield' style='font-size:24px'></i>
+            <h4><i class='fas fa-user-shield' style='font-size:24px'></i>
                 Privacy policy</h4>
         </div>
         <div>
-            <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;"><i class="fa fa-facebook-f" style="font-size:24px; "></i>
+            <h4><i class="fa fa-facebook-f" style="font-size:24px;"></i>
                 Facebook</h4>
         </div>
         <div>
-            <h4 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">                        <i class="fa fa-instagram" style="font-size:24px;"></i>
+            <h4><i class="fa fa-instagram" style="font-size:24px;"></i>
                 Instagram</h4>
         </div>
     </div>
     <hr>
-    <h5 style="text-align: center; font-family: cursive;">Copyright ©2022 All rights resevered.</h5>
+    <h5 style="text-align: center;">Copyright ©2022 All rights resevered.</h5>
 
 
     <script>
-        let slideIndex = 0;
-        showSlides();
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-        function showSlides() {
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
         slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 2500); // Change image every 2 seconds
+        dots[slideIndex-1].className += " active";
         }
     </script>
 </body>
