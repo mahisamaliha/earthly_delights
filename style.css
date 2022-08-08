@@ -1,8 +1,9 @@
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0%;
     margin: 0%;
 }
+
 
 /*------- FIRST CONTAINER ----------*/
 
@@ -20,7 +21,7 @@
     text-align: center;
     color: white;
     font-size: 70px;
-    padding-top: 230px;
+    padding-top: 200px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -28,7 +29,7 @@
 .para1{
     color: white;
     text-align: center;
-    padding-top: 40px;
+    padding: 40px;
     font-size: 16px;
     /* font-family:'Times New Roman', Times, serif; */
 }
@@ -82,20 +83,19 @@
 
 .slidecontain{
     border-style: double;
-    margin-left: 415px;
-    margin-right: 415px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 60px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     border-radius: 6px;
     background-color: rgba(175, 227, 137, 0.189);
-    margin-top: 60px;
+    padding: 2% 3% 2% 5%;
 }
 
 .slideshow-container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-    width: 600px;
+    width: 200px;
     position: relative;
-    margin-left: 50px;
-    margin-right: 450px;
     margin-top: 30px;
 }
   
@@ -128,19 +128,18 @@
   
 /* Caption text */
 .text {
-    font-size: 11px;
+    font-size:11px;
     position: absolute;
     bottom: 5px;
-    margin-left: 178px;
-    width: 100%;
+    margin-left: 80px;
     text-align: center;
     box-shadow: 4px rgba(0, 0, 0, 0.9);
 }
 
 .block{
+    margin-top: 4%;
     display: block;
     background-color: rgba(187, 187, 187, 0.341);
-    margin-right: 350px;
     padding: 2px;
     border-radius: 10px;
     padding-bottom: 5px;
@@ -203,8 +202,8 @@
     background-color: rgb(175, 227, 137, 0.8);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-left: 320px;
-    margin-right: 320px; 
+    margin-left: 40%;
+    margin-right: 40%; 
     border-radius:8px ;
     margin-top: 200px; 
     padding-bottom: 30px;
@@ -220,7 +219,8 @@
 /*--------- for you--------- */
 
 .rareh{
-    margin-left: 125px;
+    margin-top: 120px;
+    margin-left: 100px;
     text-align: center;
     border-radius: 7px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
@@ -230,6 +230,7 @@
 }
 
 .interestedh{
+    margin-top: 120px;
     margin-left: 70px;
     margin-right: 70px;
     text-align: center;
@@ -253,7 +254,10 @@
 
 .rare{
     border-style: ridge;
+    text-align: center;
     padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
     margin-left: 20%;
     margin-bottom: 10%;
     margin-top: 20px;
@@ -304,3 +308,58 @@
 .footersocial{
     padding-left: 150px;
 }
+
+
+
+/* Responsive */
+
+.headLines{
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+.category1 ,.category2, .category3, .category4{
+    float: left;
+    width: 25%;
+    padding: 100px;
+}
+
+.tree1 ,.tree2 ,.tree3 ,.tree4 ,.tree5 ,.tree6 ,.tree7 ,.tree8{
+    float: left;
+    width: 20%;
+}
+.forU1 , .forU2{
+    float: left;
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 12%;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .category1 ,.category2, .category3, .category4{
+      width: 50%;
+    }
+    .tree1 ,.tree2 ,.tree3 ,.tree4 ,.tree5 ,.tree6 ,.tree7 ,.tree8{
+        float: left;
+        width: 33.33%;
+    }
+    .forU1 , .forU2{
+        float: left;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .category1, .category2, .category3, .category4 {
+      width: 100%;
+    }
+    .tree1 ,.tree2 ,.tree3 ,.tree4 ,.tree5 ,.tree6 ,.tree7 ,.tree8{
+        float: left;
+        width: 50%;
+    }
+    .forU1 , .forU2{
+        float: left;
+        width: 100%;
+    }
+  }
