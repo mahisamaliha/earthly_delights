@@ -1,365 +1,172 @@
 *{
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0%;
     margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.containerHeader{
+    padding: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    font-weight: bolder;
+    display: block;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(188, 233, 165);
+    box-shadow: 5px 10px #000000a6;
+}
+
+.containerHeader2{
+    padding: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 2px 2px #4f4e4ea6;
+    background-color: rgba(123, 142, 109, 0.304);
+}
+
+.btn{
+    border-radius: 3px;
+}
 
 /*------- FIRST CONTAINER ----------*/
 
 .bg-image{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    width: 100%;
     height:120%; 
     position:relative; 
     background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-image: url(maple.jpg); 
-    width: 100%;
 }
 
 .wel{
-    text-align: center;
-    color: white;
-    font-size: 70px;
-    padding-top: 200px;
+    padding-top: 230px;
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
+    font-size: 70px;
+    color: white;
 }
 
-.para1{
-    color: white;
+.para1{    
+    padding-top: 40px;
     text-align: center;
-    padding: 40px;
     font-size: 16px;
-    /* font-family:'Times New Roman', Times, serif; */
+    color: white;
 }
 
 /* <!-----CATEGORY CONTAINER-----> */
 
-.categ{
-    display: block;
-    background-color: rgb(237, 250, 203);
-    text-align: center;
-    margin-top: 140px;
-    margin-left: 120px;
-    margin-right: 120px;
-    padding: 20px;
-}
-
-.smallcategory{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    margin-top: 80px;
-    margin-left: 240px;
-    margin-right: 200px;
-}
-
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    margin: 0px;
+    max-width: 500px;
+    margin: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(182, 206, 165, 0.304);
 }
-  
 .card button {
-    border: none;
-    outline: 0;
     padding: 12px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
     color: white;
     background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
 }
-
 .categoryimage{
-    width: 250px; 
-    height: 200px;
+    padding: 10px 2px;
+    max-width: 220px; 
+    height: 220px;
     border-radius: 7px;
-    padding: 4px 2px;
+}
+.align{
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
-/*--------- Slideshow container--- */
+/* <!-----TODAY'S DEAL-----> */
 
-.slidecontain{
+.deal{
+    margin-left: 30%;
+    margin-right: 32%;
+    display: block;
     border-style: double;
-    width: 420px;
-    margin-left: 25%;
-    margin-top: 60px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-    background-color: rgba(175, 227, 137, 0.189);
-    padding-left: 55px;
-}
-
-.slideshow-container {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-    width: 200px;
-    position: relative;
-    margin-top: 30px;
 }
-  
-/* Next & previous buttons */
-/* .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-} */
-  
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-  
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-  
-/* Caption text */
-.text {
-    font-size:11px;
-    position: absolute;
-    bottom: 5px;
-    margin-left: 80px;
-    text-align: center;
-    box-shadow: 4px rgba(0, 0, 0, 0.9);
-}
-
 .block{
-    margin-top: 4%;
+    padding: 8px;
+    margin-bottom: 5px;
     display: block;
     background-color: rgba(187, 187, 187, 0.341);
-    padding: 2px;
-    border-radius: 10px;
-    padding-bottom: 5px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-  
-.active, .dot:hover {
-    background-color: #717171;
-}
-  
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 100000s;
-}
-  
-@keyframes fade {
-    from {opacity: .9}
-    to {opacity: 1}
-}
-
-/*------ Trending Product------ */
-
-.hrr{
-    border: none;
-    height: 1.6px;
-    background: rgb(80, 79, 79);
-}
-
-.container1{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    padding-left: 260px;
-    padding-right: 250px;
-    text-align: center;
-    padding-top: 15px;
-}
+/* <!-----TRENDING TREES-----> */
 
 .pro{
-    border-style: ridge;
-    margin: 20px;
     padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
-}
-
-.trending{
-    display: block; 
-    background-color: rgb(175, 227, 137, 0.8);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-left: 10%;
+    margin-bottom: 20px;
+    max-width: 400px;
     text-align: center;
-    margin-left: 40%;
-    margin-right: 40%; 
-    border-radius:8px ;
-    margin-top: 200px; 
-    padding-bottom: 30px;
-    padding-top: 40px;
+    border-style: ridge;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(182, 206, 165, 0.304);
 }
 
 .latestimages{
+    width: 220px; 
+    height: 200px;
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
 }
 
-/*--------- for you--------- */
-
-.rareh{
-    margin-top: 120px;
-    text-align: center;
-    border-radius: 7px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-    display: block; 
-    background-color:rgb(59, 182, 118);
-    padding: 5px 5px 5px 5px;
-}
-
-.interestedh{
-    margin-top: 120px;
-    margin-left: 70px;
-    margin-right: 70px;
-    text-align: center;
-    border-radius: 7px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-    display: block; 
-    background-color:rgb(59, 182, 118);
-    padding: 5px 5px 5px 5px;
-}
-
-.container2{
-    display: grid;
-    grid-template-columns:2fr 2fr;
-    text-align: center;
-    padding-top: 35px;
-    margin-right: 200px;
-    margin-left: 70px;
-    grid-gap: 50px;
-
-}
+/* <!-----FOR YOU-----> */
 
 .rare{
-    border-style: ridge;
+    margin-top: 85px;
+    max-width: 700px;
+    max-height: 700px;
     text-align: center;
-    padding-top: 2%;
-    padding-left: 4%;
-    padding-right: 4%;
-    margin-bottom: 10%;
-    margin-top: 20px;
-    border-radius: 8px;
+    border-style: ridge;
+    border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    background-color: rgba(182, 206, 165, 0.304);
 }
-
 .picture{
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
-
 .interested{
-    border-style: outset;
-    display: grid;
-    grid-template-columns:2fr 6fr 2fr 1fr 1fr;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    display: grid;
+    grid-template-columns:3fr 3fr 3fr 1.5fr 1.5fr;
+    border-style: outset;
     border-radius: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    background-color: rgba(182, 206, 165, 0.304);
 }
 
-/*------- Footer--------- */
+/* <!-----FOOTER-----> */
 
 .footer{
+    margin-top: 50px;
+    padding-bottom: 10px;
     display: block;
     background-color: rgb(188, 233, 165);
-    padding-top: 20px;
-    padding-left: 350px;
-    padding-right: 270px;
-    padding-bottom: 25px;
-    
-    margin-top: 70px;
-    color: black;
 }
-
-.footermain{
-    display: grid;
-    grid-template-columns:3fr 3fr ;
-}
-
-.footerdiv{
-    display: grid;
-    grid-template-columns:1fr 1fr ;  
-}
-
-.footersocial{
-    padding-left: 150px;
-}
-
-
-
-/* Responsive */
-
-.headLines{
-    padding-top: 120px;
-    padding-bottom: 20px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-.category1 ,.category2, .category3, .category4{
-    float: left;
-    width: 25%;
-    padding-left: 80px;
-}
-
-.tree1 ,.tree2 ,.tree3 ,.tree4 ,.tree5 ,.tree6 ,.tree7 ,.tree8{
-    float: left;
-    width: 20%;
-}
-.forU1 , .forU2{
-    float: left;
-    width: 50%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .category1 ,.category2, .category3, .category4{
-      width: 50%;
-    }
-    .tree1 ,.tree2 ,.tree3 ,.tree4 ,.tree5 ,.tree6 ,.tree7 ,.tree8{
-        float: left;
-        width: 33.33%;
-    }
-    .forU1 , .forU2{
-        float: left;
-        width: 100%;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .category1, .category2, .category3, .category4 {
-      width: 100%;
-    }
-    .tree1 ,.tree2 ,.tree3 ,.tree4 ,.tree5 ,.tree6 ,.tree7 ,.tree8{
-        float: left;
-        width: 50%;
-    }
-    .forU1 , .forU2{
-        float: left;
-        width: 100%;
-    }
-  }
