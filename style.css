@@ -98,11 +98,16 @@
 /* <!-----TODAY'S DEAL-----> */
 
 .deal{
-    margin-left: 30%;
-    margin-right: 32%;
+    margin-left: 5%;
+    margin-right: 8%;
+    padding:1% ;
     display: block;
-    border-style: double;
+    border-style: groove;
+    border-width: 15px;
+    border-color: rgb(118, 164, 78); 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    background-color: rgb(38, 39, 37);
+
 }
 .block{
     padding: 8px;
@@ -114,22 +119,40 @@
 /* <!-----TRENDING TREES-----> */
 
 .pro{
-    padding: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-left: 10%;
     margin-bottom: 20px;
-    max-width: 400px;
+    max-width: 500px;
     text-align: center;
     border-style: ridge;
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     background-color: rgba(182, 206, 165, 0.304);
 }
-
 .latestimages{
     width: 220px; 
     height: 200px;
+    margin-bottom: 20px;
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.pName{
+    font-size: 23px;
+    font-weight: bolder;
+}
+.pPrice{
+    font-weight: bolder;
+    opacity: 0.6;
+}
+.pBtn{
+    width: 160px;
+}
+.pIcon{
+    padding-left: 6px;
+    padding-top:10px ; 
+    cursor: pointer;
+    color:rgb(41, 131, 9) ;
 }
 
 /* <!-----FOR YOU-----> */
@@ -166,7 +189,8 @@
 
 .footer{
     margin-top: 50px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: block;
     background-color: rgb(188, 233, 165);
 }
