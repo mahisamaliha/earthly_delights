@@ -214,29 +214,57 @@
     background-attachment: fixed;
     background-image: url(wallGMaple.jpg); 
 }
-.Mmargin{
-    margin-top:260px; 
-    margin-left:10%;
-    margin-right:10%;    
-    padding-bottom:5%;
-}
-.MDropdownbtn{
-    width: 200px;
-    color: #000;
-    font-weight: bolder;
+.Msearch{
+    margin-top: 150px;
+    margin-bottom: 5%;
+    text-align: center;
 }
 .search{
+    width: 450px;
     padding: 7px;
     border-radius: 5px;
-    width: 200px;
 }
 .searchbtn{
-    padding: 7px;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 5px;
-    color: #000;
 }
-.Mpadding{
-    padding-top: 10px;
+
+/*------- SECOND CONTAINER ----------*/
+
+.MCenter{
+    padding: 30px;
+    text-align: center;
+}
+.Mdropdown{
+    width: 100%;
+    border-radius: 15px;
+    background-color: rgb(159, 228, 169);
+}
+.MFilter{
+    padding: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: groove;
+    background-color: rgb(159, 228, 169); 
+}
+.filterRange{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+.containerHeader3{
+    padding: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
 }
 
 /*------- HEADLINE ----------*/
@@ -275,6 +303,7 @@
 .checked {
     color: orange;
   }
+
 .Mfooter{
     padding-top: 15px;
     padding-bottom: 15px;
