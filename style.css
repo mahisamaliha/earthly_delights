@@ -267,8 +267,6 @@
 .productBtn{
     width: 200px;
     padding: 7px;
-    margin-left: 40%;
-    margin-right: 40%;
     margin-top: 10%;
     margin-bottom: 10%;
     border-radius: 5px;
@@ -292,13 +290,11 @@
     text-align: center;
 }
 .Dmargin{
-    margin-top:260px; 
-    margin-left:10%;
-    margin-right:14%;    
+    margin-top:260px;  
     padding-bottom:5%;
 }
 .DDropdownbtn{
-    width: 400px;
+    width: 300px;
     color: #000;
 }
 .detailContainer{
