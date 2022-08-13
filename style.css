@@ -4,6 +4,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ---------------------------------------/* HOME PAGE START*\-------------------------------------- */
+
 .containerHeader{
     padding: 30px;
     margin-top: 10%;
@@ -44,7 +46,7 @@
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(maple.jpg); 
+    background-image: url(wallGMaple.jpg); 
 }
 
 .wel{
@@ -146,11 +148,11 @@
     opacity: 0.6;
 }
 .pBtn{
-    width: 160px;
+    margin-left: 2%;
+    width: 140px;
 }
 .pIcon{
     padding-left: 6px;
-    padding-top:10px ; 
     cursor: pointer;
     color:rgb(41, 131, 9) ;
 }
@@ -188,10 +190,138 @@
 }
 /* <!-----FOOTER-----> */
 
-.footer{
+.Hfooter{
     margin-top: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
     display: block;
     background-color: rgb(188, 233, 165);
 }
+
+/* ---------------------------------------/* HOME PAGE DONE*\-------------------------------------- */
+
+
+/* ---------------------------------------/* MARKET PAGE START*\-------------------------------------- */
+
+/*------- FIRST CONTAINER ----------*/
+
+.M-bg-image{
+    width: 100%;
+    height: 120%; 
+    position:relative; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(wallGMaple.jpg); 
+}
+.Mmargin{
+    margin-top:260px; 
+    margin-left:10%;
+    margin-right:10%;    
+    padding-bottom:5%;
+}
+.MDropdownbtn{
+    width: 200px;
+    color: #000;
+    font-weight: bolder;
+}
+.search{
+    padding: 7px;
+    border-radius: 5px;
+    width: 200px;
+}
+.searchbtn{
+    padding: 7px;
+    border-radius: 5px;
+    color: #000;
+}
+.Mpadding{
+    padding-top: 10px;
+}
+
+/*------- HEADLINE ----------*/
+
+.headline{
+    padding: 5px;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    display: block;
+    border-style: groove;
+    border-width: 20px;
+    border-color: rgb(118, 164, 78); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    color: #000;
+}
+.hr{
+    border: 1.5px solid rgb(0, 0, 0);
+}
+.marketimages{
+    width: 180px; 
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.productBtn{
+    width: 200px;
+    padding: 7px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    color: #000;
+}
+.checked {
+    color: orange;
+  }
+.Mfooter{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    background-color: rgb(188, 233, 165);
+}
+
+/* ---------------------------------------/* MARKET PAGE DONE*\-------------------------------------- */
+
+/* ---------------------------------------/* DETAILS PAGE START*\-------------------------------------- */
+
+.Dpadding{
+    text-align: center;
+}
+.Dmargin{
+    margin-top:260px; 
+    margin-left:10%;
+    margin-right:14%;    
+    padding-bottom:5%;
+}
+.DDropdownbtn{
+    width: 400px;
+    color: #000;
+}
+.detailContainer{
+    font-size: 20px;
+}
+.DFirst{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.Dh2{
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    text-align: center;
+    display: block;
+    border-style: double;
+    background-color:rgb(222, 216, 209,0.2) ;
+}
+.Dth{
+    text-align: center;
+    padding: 2%;
+}
+.table, th, td {
+    border: 3px solid black;
+  }
