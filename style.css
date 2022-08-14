@@ -120,7 +120,7 @@
 /* <!-----TRENDING TREES-----> */
 
 .pro{
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 15px;
     margin-left: 5%;
     margin-right: 5%;
@@ -212,15 +212,15 @@
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(wallGMaple.jpg); 
+    /* background-image: url(wallGMaple.jpg);  */
 }
 .Msearch{
-    margin-top: 150px;
-    margin-bottom: 5%;
+    margin-top: 100px;
+    margin-bottom: 5px;
     text-align: center;
 }
 .search{
-    width: 450px;
+    width: 550px;
     padding: 7px;
     border-radius: 5px;
 }
@@ -234,37 +234,44 @@
 
 /*------- SECOND CONTAINER ----------*/
 
-.MCenter{
-    padding: 30px;
-    text-align: center;
-}
-.Mdropdown{
-    width: 100%;
-    border-radius: 15px;
-    background-color: rgb(159, 228, 169);
-}
-.MFilter{
-    padding: 12px;
-    margin-bottom: 20px;
-    width: 100%;
-    border-radius: 5px;
-    border-style: groove;
-    background-color: rgb(159, 228, 169); 
-}
-.filterRange{
-    display: grid;
-    grid-template-columns: 5fr 2fr;
-}
 .containerHeader3{
-    padding: 20px;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    padding-left: 30px;
     margin-left: 10%;
     margin-right: 10%;
     display: block;
     text-align: center;
     border-radius: 10px;
     color: black;
+}
+.MCenter{
+    padding: 30px;
+    text-align: center;
+}
+.Mdropdown{
+    padding: 6px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-style: ridge;
+    border-color: rgb(151, 150, 150);
+    background-color:white;
+}
+.MFilter{
+    padding: 6px;
+    margin-bottom: 6px;
+    width: 150px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-style: ridge;
+    border-color: rgb(151, 150, 150);
+    background-color:white;
+}
+.filterRange{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.rangebtn{
+    padding: 1px;
 }
 
 /*------- HEADLINE ----------*/
@@ -287,8 +294,8 @@
 }
 .marketimages{
     width: 180px; 
-    height: 200px;
-    margin-bottom: 20px;
+    height: 180px;
+    margin-bottom: 7px;
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

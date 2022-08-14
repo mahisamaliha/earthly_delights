@@ -52,7 +52,8 @@
 
     <div>
         <div class="M-bg-image">
-            <div style="background-color: rgba(0, 0, 0, 0.6)">
+            <div> 
+                <!-- style="background-color: rgba(0, 0, 0, 0.6)" -->
                 <div style="height: 100%px;">
                     <div>
                         <div class="container">
@@ -67,40 +68,57 @@
         </div>    
     </div>
 
-    <div>            
+    <div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="row" style="float: left;padding-top: 10px;">
+                <div>
                     <h2 class="containerHeader3">
-                        <div class="dropdown" style="border-style: groove;">
-                            <button class="Mdropdown btn btn-dark dropdown-toggle" style="font-size:25px ;font-weight: bolder;" type="button" data-toggle="dropdown">Filter By 
-                            <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li style="width:300px ; font-size: 23px;"><a href="#">Fruit</a></li>
-                                <li style="font-size: 25px;"><a href="#">Flower</a></li>
-                                <li style="font-size: 25px;"><a href="#">Bonsai</a></li>
-                                <li style="font-size: 25px;"><a href="#">Evergreen</a></li>
-                            </ul>
-                        </div>
-                    </h2>
-                    
-                </div>
-                
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <h2 class="containerHeader3">
-                        <div>
-                            <p class ="MFilter" style="color: black;font-size: 25px ;font-weight:bold">Filter By Price </p>
-                            <p style="color: black; font-size: 17px; float: left;">Price: ৳10 — ৳2,000</p><br>
+                        <div style="display:block ;width:200px;">
+                            <p class ="MFilter" style="color: black;font-size: 12px ;font-weight:bold">Filter By Price </p>
                             <div class="filterRange">
                                 <div>
-                                    <input type="range" class="form-range"  id="customRange1" style="width: 100%; margin-top: 3%;">
+                                    <input type="text" placeholder="Min" style="font-size: 12px ;float: left;font-weight:bold ; width: 60px; padding: 3px;margin-left: 2px;">
                                 </div>
                                 <div>
-                                    <button  class="searchbtn" style="font-size:16px ;font-weight:bold; float: right;">Filter <i class="fa fa-filter"></i></button>
+                                    <input type="text" placeholder="Max" style="font-size:12px ;float: left;font-weight:bold ;width: 60px; padding: 3px;">
+                                </div>
+                                <div>
+                                    <button  class="rangebtn" style="font-size:16px ;font-weight:bold; float: left;"><i class="fas fa-angle-right"></i></button>
                                 </div>
                             </div>
                         </div>
                     </h2>
+                </div>
+                <div>
+                    <h2 class="containerHeader3" style="margin-top: 3px; margin-bottom: 15px;">
+                    <div class="dropdown">
+                        <button class="Mdropdown dropdown-toggle" style="font-size:12px ;font-weight: bolder;" type="button" data-toggle="dropdown">Filter By Category
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li style="width:120px ; font-size: 13px;"><a href="#">Fruit</a></li>
+                            <li style="font-size: 13px;"><a href="#">Flower</a></li>
+                            <li style="font-size: 13px;"><a href="#">Bonsai</a></li>
+                            <li style="font-size: 13px;"><a href="#">Evergreen</a></li>
+                        </ul>
+                    </div>
+                    </h2>
+                </div>
+            </div>
+            <div class="row" style="float: right;padding-top: 30px; padding-right: 8%;">
+                <div>
+                    <div class="dropdown">
+                        Sort by:<button class="dropdown-toggle" style="padding: 3px;margin-left: 5px; font-size:12px;font-weight :bold" type="button" data-toggle="dropdown">Best Match
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                          <li style="font-size: 13px;"><a href="#">Price High to Low</a></li>
+                          <li style="font-size: 13px;"><a href="#">Price Low to High</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    View :
+                    <i class="fa fa-th" style="font-size: 20px; padding-left: 13px; padding-top:8px ; cursor: pointer;"></i>
+                    <i class="fa fa-th-list" style="font-size: 20px; padding-left: 20px; padding-top:8px ;cursor: pointer;"></i>
                 </div>
             </div>
         </div>
@@ -118,7 +136,7 @@
             
             <div class="container">
                 <div>
-                    <p style="text-align: center; padding-top:30px ; font-size: 20px;">Showing 1–32 of 106 results</p>
+                    <p style="text-align: center; padding-top:15px ; font-size: 20px;">Showing 1–32 of 106 results</p>
                     <hr class="hr">
                 </div>
             </div>
@@ -132,129 +150,129 @@
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="sunflower.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Sunflower</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="maple.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Maple</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="fruittree.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Blueberry</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="rose.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Rose</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="gmaple.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">GMaple</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="ganzia.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Ganzia</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="lily.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Lily</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="evergreentree.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Evergreen</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -263,129 +281,129 @@
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="sunflower.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Sunflower</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="maple.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Maple</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="fruittree.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Blueberry</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="rose.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Rose</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="gmaple.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">GMaple</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="ganzia.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Ganzia</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="lily.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Lily</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="evergreentree.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Evergreen</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -394,129 +412,129 @@
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="sunflower.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Sunflower</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="maple.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Maple</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="fruittree.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Blueberry</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="rose.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Rose</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="gmaple.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">GMaple</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="ganzia.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Ganzia</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="lily.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Lily</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="evergreentree.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Evergreen</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -525,129 +543,129 @@
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="sunflower.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Sunflower</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="maple.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Maple</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="fruittree.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Blueberry</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="rose.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Rose</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="gmaple.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">GMaple</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="ganzia.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Ganzia</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="lily.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Lily</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                             <div class="pro">
                                 <img class="marketimages" src="evergreentree.jpg">
+                                <div>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star checked" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                    <span class="fa fa-star" style="font-size: 15px;"></span>
+                                </div>
                                 <h4 class="pName">Evergreen</h4>
                                 <h4 class="pPrice">20 ৳</h4>
                                 <button type="button" class="pBtn btn btn-success" style="font-size:15px">Add to cart</button>
                                 <i class="pIcon fa fa-heart-o" style="font-size:22px;"></i>
-                                <div style="padding-top:15px ;">
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star checked" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                    <span class="fa fa-star" style="font-size: 20px;"></span>
-                                </div>
                             </div>
                         </div>
                     </div>
