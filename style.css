@@ -322,38 +322,7 @@
 
 /* ---------------------------------------/* DETAILS PAGE START*\-------------------------------------- */
 
-.Dpadding{
-    text-align: center;
+.card-img-top{
+    margin-top: 5px;
+    border-radius: 2px;
 }
-.Dmargin{
-    margin-top:260px;  
-    padding-bottom:5%;
-}
-.DDropdownbtn{
-    width: 300px;
-    color: #000;
-}
-.detailContainer{
-    font-size: 20px;
-}
-.DFirst{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-.Dh2{
-    margin-bottom: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 2%;
-    text-align: center;
-    display: block;
-    border-style: double;
-    background-color:rgb(222, 216, 209,0.2) ;
-}
-.Dth{
-    text-align: center;
-    padding: 2%;
-}
-.table, th, td {
-    border: 3px solid black;
-  }
